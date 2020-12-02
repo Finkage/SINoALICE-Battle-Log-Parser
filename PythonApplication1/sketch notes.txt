@@ -1,0 +1,17 @@
+parse snapshots every "x" ms, before adding to deque, check if it is a copy, then if not, add it to deque
+
+parse lines backwards using ' (apostrophe)
+
+object should have:
+caster
+time
+wep
+CSS procs
+total number affected
+
+have number of casters pre input as an option?
+possibly input names of everyone beforehand?
+option to have list of weapons completely input beforehand
+when adding casters to list of casters, once 30 (or max) is exceeded, check to see if a name already input shares high number of characters relative to length of name
+>>> all this above is to not have any extra players or weapons displayed (example: beggars secrets vs beggarss ssecretss'' or low key vs lowkey)
+  
