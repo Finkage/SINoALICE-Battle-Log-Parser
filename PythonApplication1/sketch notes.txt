@@ -14,4 +14,6 @@ possibly input names of everyone beforehand?
 option to have list of weapons completely input beforehand
 when adding casters to list of casters, once 30 (or max) is exceeded, check to see if a name already input shares high number of characters relative to length of name
 >>> all this above is to not have any extra players or weapons displayed (example: beggars secrets vs beggarss ssecretss'' or low key vs lowkey)
-  
+
+
+possible solution to parsing is to have entire log be read, thrown into array of strings, then compare end of string[x] to the beginning of string[x+1], delete until no matches and then squeeze them together.

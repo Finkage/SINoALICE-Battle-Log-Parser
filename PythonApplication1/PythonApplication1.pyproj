@@ -24,7 +24,9 @@
     <Compile Include="PythonApplication1.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="sketch notes.txt" />
     <Content Include="test_log.png" />
+    <Content Include="test_log2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

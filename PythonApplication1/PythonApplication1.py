@@ -4,11 +4,14 @@ tess.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 cong = r'--oem 1 --psm 6'
 
-img = cv2.imread('test_log.png')
-img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+img = cv2.imread('test_log2.jpg')
 
-imgH, imgW, ded = img.shape
+#converting jpg into binary color so only text is visable
+img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+thresh, img = cv2.threshold(img, 110, 255, cv2.THRESH_BINARY)
+
+#debugging tool to see the recognized characters
+imgH, imgW = img.shape
 boxes = tess.image_to_boxes(img, lang = 'eng', config=cong)
 text = tess.image_to_string(img, lang = 'eng', config=cong)
 
