@@ -20,3 +20,6 @@ possible solution to parsing is to have entire log be read, thrown into array of
 
 idea for improving accuracy even further if necessary:
 	try for some form of advanced thresholding. idea is to to "inverted" truncating, where values above a certain threshold are set to maximum value
+
+
+keep in mind that swipe attacks dont have a name
