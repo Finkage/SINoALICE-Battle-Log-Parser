@@ -17,3 +17,6 @@ when adding casters to list of casters, once 30 (or max) is exceeded, check to s
 
 
 possible solution to parsing is to have entire log be read, thrown into array of strings, then compare end of string[x] to the beginning of string[x+1], delete until no matches and then squeeze them together.
+
+idea for improving accuracy even further if necessary:
+	try for some form of advanced thresholding. idea is to to "inverted" truncating, where values above a certain threshold are set to maximum value

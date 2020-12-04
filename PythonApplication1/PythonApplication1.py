@@ -1,10 +1,14 @@
 import cv2
 import pytesseract as tess
+from class1 import WindowCapture
+
 tess.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 cong = r'--oem 1 --psm 6'
 
-img = cv2.imread('test_log2.jpg')
+#img = cv2.imread('test_log2.jpg')
+screen = WindowCapture('BlueStacks')
+img = screen.get_screenshot()
 
 #converting jpg into binary color so only text is visable
 img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
