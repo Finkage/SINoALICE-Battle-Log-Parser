@@ -23,3 +23,6 @@ idea for improving accuracy even further if necessary:
 
 
 keep in mind that swipe attacks dont have a name
+
+
+perhaps automating the scrolling and 'nexting' of pages should be automated through the parser rather than a macro in bluestacks. might allow for faster, more accurate, and smoother parsing overall.
