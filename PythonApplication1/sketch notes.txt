@@ -26,3 +26,6 @@ keep in mind that swipe attacks dont have a name
 
 
 perhaps automating the scrolling and 'nexting' of pages should be automated through the parser rather than a macro in bluestacks. might allow for faster, more accurate, and smoother parsing overall.
+
+
+possibly implement a gui that shows options of windows to target, and also the ability to pick the size of the screen to be parsed
