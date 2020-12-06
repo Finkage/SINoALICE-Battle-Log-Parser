@@ -16,7 +16,8 @@ when adding casters to list of casters, once 30 (or max) is exceeded, check to s
 >>> all this above is to not have any extra players or weapons displayed (example: beggars secrets vs beggarss ssecretss'' or low key vs lowkey)
 
 
-possible solution to parsing is to have entire log be read, thrown into array of strings, then compare end of string[x] to the beginning of string[x+1], delete until no matches and then squeeze them together.
+possible solution to parsing is to have entire log be read, thrown into array of strings, then compare end of string[x] to the beginning of string[x+1], 
+	delete until no matches and then squeeze them together.
 
 idea for improving accuracy even further if necessary:
 	try for some form of advanced thresholding. idea is to to "inverted" truncating, where values above a certain threshold are set to maximum value
@@ -29,3 +30,23 @@ perhaps automating the scrolling and 'nexting' of pages should be automated thro
 
 
 possibly implement a gui that shows options of windows to target, and also the ability to pick the size of the screen to be parsed
+
+
+
+current idea for gathering and storing all parsed data
+	program will manually scroll and click through all logs
+	a smart detection of text needs to be implemented to perform a continuous parse
+	this parse might be stored in a deque of "parse"
+	clicking the next button on the logs should be dictated by if anything was ammended to the parse deque
+	all reading of parses to ammend and compare should be done LIFO until an aqiquate amount of comparisons come up positive.
+		taking note that there might be slight discrepencies between two lines in different parses. perhaps there is a library to compare lines of text to similarity?
+
+
+steps:
+	scroll through log
+	scan log number
+	go to next page
+	completion of log
+
+
+find a better library than pyautogui, for now it is functional
