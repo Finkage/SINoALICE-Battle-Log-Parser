@@ -30,13 +30,13 @@ class WindowCapture:
         vertical_boarder_pixels = ySize
         self.w = self.w - (side_border_pixels * 2)
         self.h = self.h - (vertical_boarder_pixels * 2)
-        self.cropped_x = side_border_pixels
-        self.cropped_y = vertical_boarder_pixels
+        self.cropped_x = side_border_pixels + xOffset
+        self.cropped_y = vertical_boarder_pixels + yOffset
 
         # set the cropped coordinates offset so we can translate screenshot
         # images into actual screen positions
-        self.offset_x = window_rect[0] + self.cropped_x + xOffset
-        self.offset_y = window_rect[1] + self.cropped_y + yOffset
+        self.offset_x = window_rect[0] + self.cropped_x
+        self.offset_y = window_rect[1] + self.cropped_y
 
     def get_screenshot(self):
 
