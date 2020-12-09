@@ -7,7 +7,9 @@ caster
 time
 wep
 CSS procs
-total number affected
+total numbers affected (buff, debuff, heal, damage)
+damage taken
+stats changed with particular wep
 
 have number of casters pre input as an option?
 possibly input names of everyone beforehand?
@@ -50,3 +52,5 @@ steps:
 
 
 find a better library than pyautogui, for now it is functional
+
+track damage taken?

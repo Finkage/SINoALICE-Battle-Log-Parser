@@ -16,7 +16,7 @@ class ReadImage():
     # on contstruction, an image is brought in and converted to greyscale and put through binary threshold
     def __init__(self, rawImage):
         self.img = cv2.cvtColor(rawImage, cv2.COLOR_BGR2GRAY)
-        thresh, self.img = cv2.threshold(self.img, 110, 255, cv2.THRESH_BINARY)
+        thresh, self.img = cv2.threshold(self.img, 115, 255, cv2.THRESH_BINARY)
         imgHt, imgWd = self.img.shape
 
     # returns the text inside the image using tesseract OCR

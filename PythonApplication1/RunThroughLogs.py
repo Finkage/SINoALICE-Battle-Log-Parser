@@ -14,4 +14,4 @@ class TaskMaster():
 
     def clickNextPage(self):
         # move to next page button
-        pyautogui.click(x = 0, y = 0) #need to discover location of button
+        pyautogui.click(x = 1045, y = 920) #need to discover location of button
